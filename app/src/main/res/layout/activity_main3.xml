@@ -8,12 +8,21 @@
     android:orientation="vertical"
     android:background="@drawable/warmbg" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:fontFamily="@font/open_sans_light"
+        android:layout_marginTop="175dp"
+        android:paddingStart="25dp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="320dp">
+        android:layout_marginTop="125dp">
 
         <EditText
             android:layout_width="350dp"
@@ -29,18 +38,33 @@
             android:id="@+id/psw"
             android:hint="Password"
             android:inputType="textPassword"
-            android:layout_weight="0.33"
-            style=""/>
+            android:layout_weight="0.33" />
 
-        <Button
-            android:id="@+id/login"
-            android:layout_width="100dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="245dp"
-            android:layout_weight="0.33"
-            android:onClick="goToFeatures"
-            android:shadowColor="#A89B9B"
-            android:text="LOGIN" />
+            android:orientation="horizontal"
+            android:layout_weight="0.33">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:text="BACK"
+                android:onClick="goBack"
+                android:layout_marginEnd="160dp"
+                app:icon="@drawable/baseline_keyboard_arrow_left_black_24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:textColor="#260027"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToFeatures"
+                android:text="LOGIN" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

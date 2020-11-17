@@ -16,4 +16,16 @@
         android:textSize="35sp"
         android:layout_margin="30dp"/>
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:text="BACK"
+        android:onClick="goBack"
+        android:layout_marginEnd="150dp"
+        app:icon="@drawable/baseline_keyboard_arrow_left_black_24dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:textColor="#260027"
+        android:layout_marginStart="30dp"/>
+
 </LinearLayout>

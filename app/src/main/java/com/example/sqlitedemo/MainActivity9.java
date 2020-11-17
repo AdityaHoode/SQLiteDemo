@@ -2,7 +2,9 @@ package com.example.sqlitedemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity9 extends AppCompatActivity {
@@ -20,5 +22,10 @@ public class MainActivity9 extends AppCompatActivity {
         String data = dbHelper.displayUsers();
         contents.setText(data);
 
+    }
+
+    public void goBack(View view) {
+        Intent i = new Intent(this,MainActivity5.class);
+        startActivity(i);
     }
 }

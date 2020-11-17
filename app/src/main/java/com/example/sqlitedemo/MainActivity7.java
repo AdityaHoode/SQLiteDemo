@@ -34,4 +34,9 @@ public class MainActivity7 extends AppCompatActivity {
         Intent i = new Intent(MainActivity7.this,MainActivity5.class);
         startActivity(i);
     }
+
+    public void goBack(View view) {
+        Intent i = new Intent(MainActivity7.this,MainActivity5.class);
+        startActivity(i);
+    }
 }

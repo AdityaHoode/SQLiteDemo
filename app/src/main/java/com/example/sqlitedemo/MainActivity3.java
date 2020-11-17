@@ -34,11 +34,17 @@ public class MainActivity3 extends AppCompatActivity {
         if (res==1){
             Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show();
             Intent i = new Intent(MainActivity3.this,MainActivity5.class);
+            i.putExtra("user", userName.getText().toString());
             startActivity(i);
         }else{
             Toast.makeText(this, "Login Unsuccessful", Toast.LENGTH_LONG).show();
             Intent i = new Intent(MainActivity3.this,MainActivity2.class);
             startActivity(i);
         }
+    }
+
+    public void goBack(View view) {
+        Intent i = new Intent(MainActivity3.this,MainActivity2.class);
+        startActivity(i);
     }
 }

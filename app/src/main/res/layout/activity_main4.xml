@@ -8,12 +8,22 @@
     android:orientation="vertical"
     android:background="@drawable/warmbg">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:fontFamily="@font/open_sans_light"
+        android:layout_marginTop="175dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="320dp">
+        android:layout_marginTop="125dp">
 
         <EditText
             android:layout_width="350dp"
@@ -31,15 +41,30 @@
             android:inputType="textPassword"
             android:layout_weight="0.33" />
 
-        <Button
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:id="@+id/register"
-            android:text="REGISTER"
-            android:layout_weight="0.33"
-            android:layout_marginStart="245dp"
-            android:onClick="goToLogin"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.33">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:text="Back"
+                android:onClick="goBack"
+                android:layout_marginEnd="145dp"
+                app:icon="@drawable/baseline_keyboard_arrow_left_black_24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"                android:textColor="#260027"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register"
+                android:text="REGISTER"
+                android:onClick="goToLogin" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
