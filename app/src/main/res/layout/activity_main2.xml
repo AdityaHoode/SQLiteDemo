@@ -30,7 +30,8 @@
             android:layout_height="44dp"
             android:layout_weight="0.5"
             android:onClick="goToLogin"
-            android:text="Login" />
+            android:text="Login"
+            android:background="@drawable/mybutton"/>
 
         <Button
             android:id="@+id/register"
@@ -38,9 +39,10 @@
             android:layout_height="44dp"
             android:layout_weight="0.5"
             android:onClick="goToRegister"
-            android:text="Register" />
+            android:text="Register"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="7dp"/>
 
     </LinearLayout>
-
 
 </LinearLayout>

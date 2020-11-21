@@ -32,7 +32,8 @@
             android:layout_weight="0.25"
             android:fontFamily="sans-serif-medium"
             android:onClick="userAdd"
-            android:text="ADD USER" />
+            android:text="ADD USER"
+            android:background="@drawable/mybutton"/>
 
         <Button
             android:layout_width="350dp"
@@ -40,7 +41,9 @@
             android:id="@+id/delete"
             android:text="DELETE USER"
             android:layout_weight="0.25"
-            android:onClick="userDelete"/>
+            android:onClick="userDelete"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="5dp"/>
 
         <Button
             android:layout_width="350dp"
@@ -48,7 +51,9 @@
             android:id="@+id/update"
             android:text="UPDATE USER"
             android:layout_weight="0.25"
-            android:onClick="userUpdate"/>
+            android:onClick="userUpdate"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="5dp"/>
 
         <Button
             android:layout_width="350dp"
@@ -56,7 +61,9 @@
             android:id="@+id/display"
             android:text="LIST USERS"
             android:layout_weight="0.25"
-            android:onClick="userDisplay"/>
+            android:onClick="userDisplay"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="5dp"/>
 
         <Button
             android:layout_width="wrap_content"

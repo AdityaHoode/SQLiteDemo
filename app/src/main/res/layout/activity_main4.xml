@@ -31,7 +31,10 @@
             android:id="@+id/username"
             android:hint="Username"
             android:inputType="text"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:background="@drawable/myedittext"
+            android:paddingStart="25dp"
+            android:textColorHint="#AE260027"/>
 
         <EditText
             android:layout_width="350dp"
@@ -39,30 +42,37 @@
             android:id="@+id/psw"
             android:hint="Password"
             android:inputType="textPassword"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:background="@drawable/myedittext"
+            android:paddingStart="25dp"
+            android:layout_marginTop="4dp"
+            android:textColorHint="#AE260027"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="0.33">
+            android:layout_weight="0.33"
+            android:layout_marginTop="5dp">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/back"
-                android:text="Back"
+                android:text="BACK"
                 android:onClick="goBack"
                 android:layout_marginEnd="145dp"
                 app:icon="@drawable/baseline_keyboard_arrow_left_black_24dp"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"                android:textColor="#260027"/>
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:textColor="#260027" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/register"
                 android:text="REGISTER"
-                android:onClick="goToLogin" />
+                android:onClick="goToLogin"
+                android:background="@drawable/mybutton"/>
 
         </LinearLayout>
 
