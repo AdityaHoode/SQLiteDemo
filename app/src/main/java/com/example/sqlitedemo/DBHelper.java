@@ -82,7 +82,7 @@ public class DBHelper extends SQLiteOpenHelper {
         StringBuilder data = new StringBuilder();
         if (cr.moveToFirst()){
             do {
-                data.append(cr.getString(0)).append(" : ").append(cr.getString(1)).append("\n");
+                data.append(cr.getString(0)).append("\n");
             }while (cr.moveToNext());
         }
         db.close();

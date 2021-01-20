@@ -21,7 +21,6 @@ public class MainActivity9 extends AppCompatActivity {
         dbHelper = new DBHelper(MainActivity9.this,DBHelper.DBNAME,null,DBHelper.DBVERSION);
         String data = dbHelper.displayUsers();
         contents.setText(data);
-
     }
 
     public void goBack(View view) {
